@@ -2,5 +2,43 @@
 
 {% block body %}
 
+    <div data-bs-spy="scroll" data-bs-target="#navbarNavDropdown" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example p-5 rounded-2"
+         tabindex="0">
+        <div id="home" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="{{ asset('images/used/image1.png') }}" class="d-block img-fluid w-100" alt="first-img" style="height: 70vh">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>start your travel </h1>
+                        <h1 class="text-warning">with us</h1>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="{{ asset('images/used/image2.png') }}" class="d-block img-fluid w-100" alt="second-img" style="height: 70vh">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>start your travel </h1>
+                        <h1 class="text-warning">with us</h1>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="{{ asset('images/used/image3.png') }}" class="d-block img-fluid w-100" alt="third-img" style="height: 70vh">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>start your travel </h1>
+                        <h1 class="text-warning">with us</h1>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#home" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#home" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </div>
+
 {% endblock %}
 
